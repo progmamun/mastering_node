@@ -16,7 +16,7 @@
 3. Row(Document) Commands
 
 - Show all Rows in a Collection `db.comments.find()`
-- Show all Rows in a Collection (emaJohn) `db.comments.find().emaJohn()`
+- Show all Rows in a Collection (Prettified) `db.comments.find().pretty()`
 - Find the first row matching the object `db.comments.findOne({name: 'Mamun'})`
 - Insert One Row
   ```db.comments.insert({
