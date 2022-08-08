@@ -6,3 +6,4 @@
 - `npm i node-geocoder`
 - ``
 - mapquest, Cosumer Key
+- node seeder.js i
