@@ -2,6 +2,7 @@
 - `npm i -D nodemon`
 - `npm i morgan`
 - `npm i colors mongoose`
+- `npm i slugify`
+- `npm i node-geocoder`
 - ``
-- ``
-- ``
+- mapquest, Cosumer Key
