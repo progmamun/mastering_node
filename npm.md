@@ -1,0 +1,4 @@
+- `npm outdated`
+- `"slugify":"~1.0.3"` `~`/`^`, `~` this is safe only patch or minor update, `*` all , but bug fixed used `~`
+- `npm update packageName`
+- `npm uninstall packageName`

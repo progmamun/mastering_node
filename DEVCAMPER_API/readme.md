@@ -5,6 +5,7 @@
 - `npm i slugify`
 - `npm i node-geocoder`
 - `npm i express-fileupload`
+- `npm i nodemailer`
 
 ---
 
