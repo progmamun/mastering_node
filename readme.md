@@ -10,6 +10,10 @@
 
 <img src='https://user-images.githubusercontent.com/67066348/183273616-ad745043-642e-4329-9863-83c54be8955e.png' height='400'>
 
+![express](images/2022-09-21_11-31.jpg)
+![api](images/2022-10-05_16-39.jpg)
+![rest-architecture](images/2022-10-05_16-53.jpg)
+
 ---
 
 ## avoid repeating the try/catch code
