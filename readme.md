@@ -14,10 +14,16 @@
 
 ## avoid repeating the try/catch code
 
+```node
+const asyncHandler = (fn) => (req, res, next) =>
+  Promise.resolve(fn(req, res, next)).catch(next);
 ```
-const asyncHandler = fn => (req, res, next) =>
-  Promise
-    .resolve(fn(req, res, next))
-    .catch(next)
 
-```
+---
+
+- Node Project:
+
+1. Quiz app
+2. Forum (Like Reddit)
+3. Restaurant Management
+4. Social NetWork
