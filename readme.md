@@ -1,3 +1,9 @@
+## config
+
+### `js style` [airbnb](https://github.com/airbnb/javascript)
+
+- `yarn add -D eslint prettier eslint-config-prettier eslint-plugin-prettier eslint-config-airbnb eslint-plugin-node eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react`
+
 # NODE.js
 
 - Node.js is a JavaScript Runtime built on google's open-source V8 Javascript engine. 🤔
@@ -13,6 +19,7 @@
 ![express](images/2022-09-21_11-31.jpg)
 ![api](images/2022-10-05_16-39.jpg)
 ![rest-architecture](images/2022-10-05_16-53.jpg)
+![express-cycle](images/2022-10-06_11-26.jpg)
 
 ---
 
