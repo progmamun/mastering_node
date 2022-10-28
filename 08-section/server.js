@@ -4,6 +4,7 @@ const color = require('colors');
 
 // Load env vars
 dotenv.config({ path: './config/config.env' });
+
 const app = require('./app');
 const connectDB = require('./config/db');
 
