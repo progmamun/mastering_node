@@ -20,6 +20,7 @@
 ![api](images/2022-10-05_16-39.jpg)
 ![rest-architecture](images/2022-10-05_16-53.jpg)
 ![express-cycle](images/2022-10-06_11-26.jpg)
+![security](images/security.jpg)
 
 ---
 
