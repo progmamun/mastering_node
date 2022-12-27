@@ -88,7 +88,7 @@ const tourSchema = new mongoose.Schema(
       },
       coordinates: [Number],
       address: String,
-      description: String,
+      description: String
     },
     location: [
       {
@@ -120,7 +120,7 @@ tourSchema.virtual('durationWeeks').get(function () {
   return this.duration / 7;
 });
 
-// Virtual populate 
+// Virtual populate
 tourSchema.virtual('review', {
   ref: 'Review',
   foreignField: 'tour',
