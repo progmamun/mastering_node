@@ -79,4 +79,6 @@ exports.updateUser = (req, res) => {
     message: 'This route is not yet defined!'
   });
 };
+// Do NOT update password with this! because findByIdAndUpdate
+exports.deleteUser = factory.deleteOne(User);
 exports.deleteUser = factory.deleteOne(User);
