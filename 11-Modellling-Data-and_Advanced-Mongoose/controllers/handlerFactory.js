@@ -1,6 +1,6 @@
 const catchAsync = require('./../utils/catchAsync');
-const APIFeatures = require('./../utils/apiFeatures');
 const AppError = require('./../utils/appError');
+const APIFeatures = require('./../utils/apiFeatures');
 
 exports.deleteOne = Model =>
   catchAsync(async (req, res, next) => {
@@ -9,6 +9,11 @@ exports.deleteOne = Model =>
     if (!doc) {
       return next(new AppError('No document found with that ID', 404));
     }
+
+    res.status(204).json({
+      status: 'success',
+      data: null
+    });
   });
 
 exports.updateOne = Model =>
@@ -17,9 +22,11 @@ exports.updateOne = Model =>
       new: true,
       runValidators: true
     });
+
     if (!doc) {
       return next(new AppError('No document found with that ID', 404));
     }
+
     res.status(200).json({
       status: 'success',
       data: {
@@ -60,7 +67,7 @@ exports.getOne = (Model, popOptions) =>
 
 exports.getAll = Model =>
   catchAsync(async (req, res, next) => {
-    // to  allow for nested GET reviews on tour
+    // To allow for nested GET reviews on tour (hack)
     let filter = {};
     if (req.params.tourId) filter = { tour: req.params.tourId };
 

@@ -1,3 +1,4 @@
+// review / rating / createdAt / ref to tour / ref to user
 const mongoose = require('mongoose');
 const Tour = require('./tourModel');
 
@@ -48,7 +49,6 @@ reviewSchema.pre(/^find/, function(next) {
     path: 'user',
     select: 'name photo'
   });
-
   next();
 });
 
@@ -94,7 +94,7 @@ reviewSchema.pre(/^findOneAnd/, async function(next) {
 });
 
 reviewSchema.post(/^findOneAnd/, async function() {
-  // this.r = await this.findOne(); does NOT work here, query has already executed
+  // await this.findOne(); does NOT work here, query has already executed
   await this.r.constructor.calcAverageRatings(this.r.tour);
 });
 
