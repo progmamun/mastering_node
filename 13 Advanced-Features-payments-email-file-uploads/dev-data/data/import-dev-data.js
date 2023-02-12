@@ -7,18 +7,27 @@ const User = require('./../../models/userModel');
 
 dotenv.config({ path: './config.env' });
 
-const DB = process.env.DATABASE.replace(
-  '<PASSWORD>',
-  process.env.DATABASE_PASSWORD
-);
-
+// const DB = process.env.DATABASE.replace(
+//   '<PASSWORD>',
+//   process.env.DATABASE_PASSWORD
+// );
+const uri =
+  'mongodb+srv://natoursAdmin:<password>@cluster0.e6jfoyx.mongodb.net/?retryWrites=true&w=majority';
+// mongoose
+//   .connect(DB, {
+//     useNewUrlParser: true,
+//     useCreateIndex: true,
+//     useFindAndModify: false
+//   })
+//   .then(() => console.log('DB connection successful!'));
 mongoose
-  .connect(DB, {
+  .connect(uri, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false
   })
   .then(() => console.log('DB connection successful!'));
+// mongoose.connect(uri).then(() => console.log('DB connection successful!'));
 
 // READ JSON FILE
 const tours = JSON.parse(fs.readFileSync(`${__dirname}/tours.json`, 'utf-8'));
